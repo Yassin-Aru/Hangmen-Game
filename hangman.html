@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hangman.css">
+  <title>Hangman Game</title>
+</head>
+<body>
+  <div class="container">
+    <div class="game-info">
+      <div class="game-name">Hangman</div>
+        <div class="category">
+          Word From: <span></span>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="hangman-draw">
+        <div class="the-draw">
+          <div class="the-stand"></div>
+          <div class="the-hang"></div>
+          <div class="the-rope"></div>
+          <div class="the-man">
+            <div class="head"></div>
+            <div class="body"></div>
+            <div class="hands"></div>
+            <div class="legs"></div>
+          </div>
+        </div>
+      </div>
+      <div class="letters"></div>
+    </div>
+        <hr>
+        <div class="letters-guess"></div>
+  </div>
+  <button class="btn-again" id="btn-reload">AGAIN</button>
+    <!-- there is an audio section to to add it but becaue I don't have the audio, "NOT YET" -->
+    <audio id="succes" src="https://freesound.org/data/previews/109/109662_945474-lq.mp3" preload="auto"></audio>
+    <audio id="fail" src="https://freesound.org/data/previews/404/404743_140737-lq.mp3"auto"></audio>
+     <!--audio when losing the game -->
+    <audio id="loser" src="https://freesound.org/data/previews/77/77201_747245-lq.mp3" preload="auto"></audio> 
+    <script src="hangman.js"></script>
+</body>
+</html>
